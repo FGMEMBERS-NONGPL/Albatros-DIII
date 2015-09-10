@@ -3,7 +3,7 @@
 <PropertyList>
 
   <cannon>
-    <name>MG 151 cannons</name>
+    <name>Guns</name>
     <model>Aircraft/Albatros-DIII/Models/Effects/guns/apibullet-tracer.xml</model>
     <trigger>controls/armament/trigger</trigger>
     <speed>2910</speed>
