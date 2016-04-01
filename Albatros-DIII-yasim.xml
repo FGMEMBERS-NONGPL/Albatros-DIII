@@ -216,7 +216,7 @@ Performance
 
   <!-- Fuel  -->  
 <!-- Guess on fuel tank position -->
-<tank x="0.150" y="0" z="0.424" capacity="130.4"/> 
+<tank x="0.150" y="0" z="0.424" capacity="189.5"/> 
 
   <!-- simulated pilot and cargo weight -->
 
