@@ -6,7 +6,14 @@
     <menu n="10">
       <label>Albatros DIII</label>
       <enabled type="bool">true</enabled>
-			<item>
+	<item>
+        <label>Select Livery</label>
+        <binding>
+          <command>nasal</command>
+          <script>aircraft.livery.dialog.toggle()</script>
+        </binding>
+      </item>
+                     <item>
 				<label>Reload guns</label>
 				<binding>
 					<command>nasal</command>

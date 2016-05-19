@@ -6,10 +6,29 @@
 <!-- Albatros DIII-->
 
     <path>albatros_diii.ac</path>
-    <offsets>
-        <pitch-deg>0</pitch-deg>
-        <z-m>0.0</z-m>
-    </offsets>
+
+      <nasal>
+    <load>
+      var livery_update = aircraft.livery_update.new("Aircraft/Albatros-DIII/Models/Liveries", 10);
+
+      var self = cmdarg();
+
+      var float_0 = self.getNode("sim/multiplay/generic/float[0]", 1);
+      var float_1 = self.getNode("sim/multiplay/generic/float[1]", 1);
+      
+      var crew_door = self.getNode("instrumentation/doors/crew/position-norm", 1);
+      var passenger_door = self.getNode("instrumentation/doors/passenger/position-norm", 1);
+    
+      crew_door.alias(float_0);
+      passenger_door.alias(float_1);
+    </load>
+
+    <unload>
+      livery_update.stop();
+      crew_door.unalias();
+      passenger_door.unalias();
+    </unload>
+  </nasal>
 
  <effect>
      <inherits-from>Effects/model-transparent</inherits-from>
@@ -19,6 +38,33 @@
       <object-name>wires7</object-name>
       <object-name>wires9</object-name>  
     </effect>
+
+  <animation>
+    <type>material</type>
+    <object-name>spinner</object-name>
+    <object-name>fuselage</object-name>
+    <object-name>fin</object-name>
+    <object-name>tailskid</object-name>
+    <object-name>rudder</object-name>
+    <object-name>stabilizer</object-name>
+    <object-name>elevator</object-name>
+    <property-base>sim/model/livery</property-base>
+    <texture-prop>fuse-texture</texture-prop>
+    <texture>fuse.png</texture>
+ </animation>
+
+ <animation>
+    <type>material</type>   
+    <object-name>leftaileron</object-name>
+    <object-name>rightaileron</object-name>
+    <object-name>leftlowwing</object-name>
+    <object-name>rightlowwing</object-name>
+    <object-name>leftupwing</object-name>
+    <object-name>rightupwing</object-name>
+    <property-base>sim/model/livery</property-base>
+    <texture-prop>wing-texture</texture-prop>
+    <texture>wings1.png</texture>
+  </animation>
 
     <model>
     <path>Aircraft/Albatros-DIII/Models/Effects/guns/fire.xml</path>

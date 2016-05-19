@@ -30,6 +30,9 @@
 	<aero archive="y">Albatros-DIII-yasim</aero>
 	<model>
 		<path archive="y">Aircraft/Albatros-DIII/Models/Albatros-DIII-model.xml</path>
+       <livery>
+         <file type="string">default</file>
+       </livery>
 	</model>
 
     <submodels> 
@@ -115,6 +118,9 @@
       <file>Aircraft/Albatros-DIII/Nasal/weapons.nas</file>
       <file>Aircraft/Albatros-DIII/Nasal/revi.nas</file>
     </guns>
+    <liveries>
+     <file>Aircraft/Albatros-DIII/Nasal/liveries.nas</file>
+    </liveries>
   </nasal>
 
 </PropertyList>
