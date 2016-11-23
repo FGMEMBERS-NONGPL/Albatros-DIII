@@ -45,22 +45,19 @@
     <object-name>lunettesTr</object-name>
   </animation>
 
-  <animation>
-    <type>rotate</type>
-    <object-name>AnimeLunettes</object-name>
-    <property>sim/model/door-positions/crew/position-norm</property>
-    <factor> 40 </factor>
-    <center>
-      <x-m> 0.05961 </x-m>
-      <y-m> 0.000 </y-m>
-      <z-m> 0.7427 </z-m>
-    </center>
-    <axis>
-      <x> 0 </x>
-      <y> 1 </y>
-      <z> 0 </z>
-    </axis>
-  </animation>
+	<!-- De-select when in view 0 -->
+	<animation>
+		<type>select</type>
+		<object-name>Pilot</object-name>
+		<condition>
+			<not>
+				<equals>
+					<property>sim/current-view/view-number</property>
+					<value>0</value>
+				</equals>
+			</not>
+		</condition>
+	</animation>
  
 
 </PropertyList>

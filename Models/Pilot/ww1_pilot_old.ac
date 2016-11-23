@@ -2,10 +2,14 @@ AC3Db
 MATERIAL "DefaultWhite" rgb 1 1 1  amb 1 1 1  emis 0 0 0  spec 0.5 0.5 0.5  shi 64  trans 0
 MATERIAL "transparent" rgb 1 1 1  amb 0.5 0.5 0.5  emis 0 0 0  spec 1 1 1  shi 64  trans 0.7
 OBJECT world
+kids 1
+OBJECT group
+name "Pilot"
+loc -0.34066 0.238641 0.00315984
 kids 15
 OBJECT poly
 name "tete"
-loc -0.0720178 0.674129 -0.00558746
+loc 0.268642 0.435488 -0.0087473
 data 4
 tete
 texture "ww1_pilot_old.png"
@@ -5556,7 +5560,7 @@ refs 4
 kids 0
 OBJECT poly
 name "piedG"
-loc -0.8818 -0.112141 0.163711
+loc -0.54114 -0.350782 0.160551
 data 5
 piedG
 texture "ww1_pilot_old.png"
@@ -5902,7 +5906,7 @@ refs 4
 kids 0
 OBJECT poly
 name "piedD"
-loc -0.890764 -0.134814 -0.105553
+loc -0.550104 -0.373455 -0.108713
 data 5
 piedD
 texture "ww1_pilot_old.png"
@@ -6248,7 +6252,7 @@ refs 4
 kids 0
 OBJECT poly
 name "manche"
-loc -0.354198 0.176758 -0.0687865
+loc -0.0135378 -0.0618834 -0.0719463
 data 6
 manche
 texture "ww1_pilot_old.png"
@@ -8027,7 +8031,7 @@ refs 4
 kids 0
 OBJECT poly
 name "avantbrasD"
-loc -0.271094 0.302726 -0.161409
+loc 0.0695662 0.0640845 -0.164569
 data 10
 avantbrasD
 texture "ww1_pilot_old.png"
@@ -8277,7 +8281,7 @@ refs 4
 kids 0
 OBJECT poly
 name "avantbrasG"
-loc -0.299988 0.164659 0.201082
+loc 0.0406722 -0.0739825 0.197922
 data 10
 avantbrasG
 texture "ww1_pilot_old.png"
@@ -9782,7 +9786,7 @@ refs 4
 kids 0
 OBJECT poly
 name "brasD"
-loc -0.0906438 0.390326 -0.200559
+loc 0.250016 0.151685 -0.203719
 data 5
 brasD
 texture "ww1_pilot_old.png"
@@ -9963,7 +9967,7 @@ refs 4
 kids 0
 OBJECT poly
 name "brasG"
-loc -0.0529348 0.341998 0.205945
+loc 0.287725 0.103357 0.202785
 data 5
 brasG
 texture "ww1_pilot_old.png"
@@ -10204,7 +10208,7 @@ refs 4
 kids 0
 OBJECT poly
 name "corps"
-loc -0.0687978 0.289963 -0.0118075
+loc 0.271862 0.0513216 -0.0149673
 data 5
 corps
 texture "ww1_pilot_old.png"
@@ -12342,7 +12346,7 @@ refs 4
 kids 0
 OBJECT poly
 name "cuisseD"
-loc -0.244483 0.0442251 -0.0961635
+loc 0.0961773 -0.194416 -0.0993233
 data 7
 cuisseD
 texture "ww1_pilot_old.png"
@@ -12549,7 +12553,7 @@ refs 4
 kids 0
 OBJECT poly
 name "cuisseG"
-loc -0.273699 0.0853771 0.108672
+loc 0.0669613 -0.153264 0.105512
 data 7
 cuisseG
 texture "ww1_pilot_old.png"
@@ -12749,7 +12753,7 @@ refs 4
 kids 0
 OBJECT poly
 name "jambeD"
-loc -0.66345 -0.0427939 -0.0998055
+loc -0.32279 -0.281435 -0.102965
 data 6
 jambeD
 texture "ww1_pilot_old.png"
@@ -13581,7 +13585,7 @@ refs 4
 kids 0
 OBJECT poly
 name "jambeG"
-loc -0.645722 -0.0200239 0.125822
+loc -0.305062 -0.258665 0.122662
 data 6
 jambeG
 texture "ww1_pilot_old.png"
@@ -14413,7 +14417,7 @@ refs 4
 kids 0
 OBJECT poly
 name "lunettes"
-loc -0.124101 0.709559 -0.00720646
+loc 0.216559 0.470918 -0.0103663
 data 8
 lunettes
 texture "ww1_pilot_old.png"
@@ -15507,7 +15511,7 @@ refs 4
 kids 0
 OBJECT poly
 name "lunettesTr"
-loc -0.17621 0.709674 -0.000956461
+loc 0.16445 0.471033 -0.0041163
 data 10
 lunettesTr
 texture "transp.png"

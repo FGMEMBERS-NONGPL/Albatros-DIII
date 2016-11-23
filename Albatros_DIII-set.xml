@@ -66,6 +66,13 @@
 		<path archive="y">Aircraft/Albatros-DIII/Sounds/Albatros-DIII-sound.xml</path>
 	</sound>
 
+  <!-- Payload -->
+  <weight n="0">
+      <name>Pilot</name>
+      <weight-lb>180</weight-lb>
+      <max-lb>230</max-lb>
+      <min-lb>150</min-lb>
+  </weight> 
 
  </sim>
 

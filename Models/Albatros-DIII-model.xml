@@ -321,6 +321,57 @@
  </animation>
 
 
+   <!-- Gear Compression -->
+  <animation>
+    <name>Maingear</name>
+    <object-name>leftwheel</object-name>
+    <object-name>rightwheel</object-name>
+    <object-name>wheelaxle</object-name>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>Maingear</object-name>
+    <property>gear/gear[0]/compression-norm</property>
+    <interpolation>
+      <entry><ind> 0.0 </ind><dep>  0 </dep></entry>
+      <entry><ind> 0.5 </ind><dep>  -2.15 </dep></entry>
+      <entry><ind> 1.0 </ind><dep>   -3.94 </dep></entry>
+    </interpolation>
+    <center>
+        <x-m>-0.3362</x-m>
+        <y-m> 0.7577</y-m>
+        <z-m>-1.3087</z-m>
+    </center>
+    <axis>
+      <x> 1 </x>
+      <y> 0 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+
+
+  <animation>
+    <type>rotate</type>
+    <object-name>Maingear</object-name>
+    <property>gear/gear[1]/compression-norm</property>
+    <interpolation>
+      <entry><ind> 0.0 </ind><dep>  0 </dep></entry>
+      <entry><ind> 0.5 </ind><dep>  -2.15 </dep></entry>
+      <entry><ind> 1.0 </ind><dep>   -3.94 </dep></entry>
+    </interpolation>
+    <center>
+       <x-m>-0.3362</x-m>
+        <y-m>-0.7577</y-m>
+        <z-m>-1.3087</z-m>
+    </center>
+    <axis>
+      <x> -1 </x>
+      <y> 0 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+
 
 <!-- Wheel animations -->
 
@@ -330,9 +381,9 @@
   <property>gear/gear[1]/rollspeed-ms</property>
     <factor> 23 </factor>
   <center>
-   <x-m>-0.374</x-m>
-   <y-m>0.875</y-m>
-   <z-m>-1.291</z-m>
+   <x-m>-0.3645</x-m>
+   <y-m> 0.8592</y-m>
+   <z-m>-1.2991</z-m>
   </center>
   <axis>
    <x> 0.0</x>
@@ -347,9 +398,9 @@
   <property>gear/gear[0]/rollspeed-ms</property>
     <factor> 23 </factor>
   <center>
-   <x-m>-0.374</x-m>
-   <y-m>-0.875</y-m>
-   <z-m>-1.291</z-m>
+   <x-m>-0.3645</x-m>
+   <y-m>-0.8592</y-m>
+   <z-m>-1.2991</z-m>
   </center>
   <axis>
    <x> 0.0</x>
@@ -432,9 +483,9 @@
     <entry><ind> 1600 </ind><dep>  -334 </dep></entry>
     </interpolation>
   <center>
-   <x-m>0.405</x-m>
-   <y-m>0.003</y-m>
-   <z-m> 0.461</z-m>
+   <x-m>0.402</x-m>
+   <y-m>-0.0105</y-m>
+   <z-m> 0.45607</z-m>
   </center>
   <axis>
    <x>1</x>
@@ -477,14 +528,14 @@
       <entry><ind> 26400 </ind><dep> 340 </dep></entry>
     </interpolation>
     <center>
-   <x-m> 0.482  </x-m>
-   <y-m> -0.231 </y-m>
-   <z-m> 0.448 </z-m>
+   <x-m> 0.4782  </x-m>
+   <y-m> -0.2409 </y-m>
+   <z-m> 0.4347 </z-m>
   </center>
     <axis> 
       <x> -1 </x>
-      <y>  -0.3316 </y>
-      <z>  0.333 </z>
+      <y>  -0.2816 </y>
+      <z>  0.253 </z>
     </axis>
   </animation>
 
@@ -504,8 +555,8 @@
   </center>
     <axis> 
       <x> -1 </x>
-      <y>  -0.3316 </y>
-      <z>  0.333 </z>
+      <y>  -0.2816 </y>
+      <z>  0.253 </z>
     </axis>
   </animation>
 

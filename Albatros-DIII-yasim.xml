@@ -36,8 +36,8 @@ Armament
 <airplane mass="1470">
 
 <!-- Approach configuration -->
-<approach speed="47" aoa="7" fuel="0.2">
-  <control-setting axis="/controls/engines/engine[0]/throttle" value="0.19"/>
+<approach speed="41" aoa="6" fuel="0.2">
+  <control-setting axis="/controls/engines/engine[0]/throttle" value="0.14"/>
   <control-setting axis="/controls/engines/engine[0]/mixture" value="1.0"/>
 </approach>
 
@@ -50,7 +50,7 @@ Armament
 <!-- pilot's eyepoint -->
 <cockpit x="-0.62" y="0" z="0.62"/>
 
-<fuselage ax="1.87" ay="0.0" az="0.0" bx="0.41" by="0.0" bz="0.031" width="0.870" taper="0.25" midpoint="1.0"/>
+<fuselage ax="1.87" ay="0.0" az="0.0" bx="0.41" by="0.0" bz="0.031" width="0.870" taper="0.25" midpoint="1.0" cx="1.94"/>
 <fuselage ax="0.41" ay="0.0" az="0.031" bx="-1.15" by="0.0" bz="0.017" width="1.09" taper="0.78" midpoint="0.32" cy="0.94" cz="1.04"/>
 <fuselage ax="-1.15" ay="0.0" az="0.017" bx="-4.88" by="0.0" bz="0.0" width="0.714" taper="0.15" midpoint="0.0" cy="0.78" cz="0.687"/>
 
@@ -60,12 +60,12 @@ Armament
           length="4.453" 
           chord="1.53"
           taper="1.17"
-          incidence="0.25"
-          twist="-1.5"
+          incidence="1.0"
+          twist="0.25"
           sweep="3.0"
           dihedral="1.25"
           camber="0.095">
-  <stall aoa="15" width="3" peak="1.5"/>
+  <stall aoa="14" width="4.0" peak="1.95"/>
   <flap1 start="0.62" end="1.0" lift="1.5" drag="1.17"/>
         <control-input axis="/controls/flight/aileron" control="FLAP1" split="true"/>
         <control-input axis="/controls/flight/aileron-trim" control="FLAP1" split="true"/>
@@ -80,12 +80,12 @@ Armament
         chord="1.142" 
         length="3.90" 
         taper="1" 
-        incidence="0.0"
-        twist="-1.5"
+        incidence="1.0"
+        twist="0.25"
         sweep="6.0"
         dihedral="4.25" 
-        camber="0.075">
-        <stall aoa="16" width="3.25" peak="1.5"/>
+        camber="0.095">
+        <stall aoa="15" width="4.0" peak="1.5"/>
   </mstab>
 
 
@@ -216,11 +216,11 @@ Performance
 
   <!-- Fuel  -->  
 <!-- Guess on fuel tank position -->
-<tank x="0.150" y="0" z="0.424" capacity="189.5"/> 
+<tank x="0.150" y="0" z="0.424" capacity="208"/> 
 
   <!-- simulated pilot and cargo weight -->
 
- <!-- <weight x="-0.72" y="0" z="0.103" mass-prop="/sim/weight[0]/weight-lb"/> -->
+ <weight x="-0.70" y="0" z="0.073" mass-prop="/sim/weight[0]/weight-lb"/>
 
 <ballast x="-0.25" y="0" z="-0.709" mass="120"/>
 
